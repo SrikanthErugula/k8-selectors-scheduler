@@ -29,5 +29,5 @@ spec:
       tolerations:
       - key: "project"
         operator: "Equal"
-        value: "flip"
+        value: "roboshop"
         effect: "NoSchedule"
