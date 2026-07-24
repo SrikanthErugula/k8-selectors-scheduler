@@ -12,7 +12,7 @@ spec:
       # hard rule
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
-        - matchExpressions:
+        - matchExpressions:   # this is list type we can add more
           - key: topology.kubernetes.io/zone   # here lable which zone lo vudho aa node lo pod will go into scheduler...
             operator: In
             values:

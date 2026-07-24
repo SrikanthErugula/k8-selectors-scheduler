@@ -27,7 +27,7 @@ spec:
       containers:
       - name: redis-server
         image: redis:3.2-alpine
-# upto ikkada run cheste 3 pods create ayyi 3 different locations measn nodes loki vastai 
+# upto ikkada run cheste 3 pods create ayyi 3 different locations measn 3 nodes loki vastai 
 
 --- 
 apiVersion: apps/v1
