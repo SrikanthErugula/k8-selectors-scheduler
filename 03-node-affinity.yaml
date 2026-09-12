@@ -19,10 +19,10 @@ spec:
             - us-east-1c
 
             # this EX so here disktype ssd vunnna node ki, pod will assignee ......
-          - key: disktype
-            operator: In
-            values:
-            - ssd
+          # - key: disktype
+          #   operator: In
+          #   values:
+          #   - ssd
 
       # # soft rule
       # preferredDuringSchedulingIgnoredDuringExecution:
