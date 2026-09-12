@@ -24,23 +24,23 @@ spec:
           #   values:
           #   - ssd
 
-      # # soft rule
-      # preferredDuringSchedulingIgnoredDuringExecution:
-      # # so here weight ekkuva vunde dhaniki ekkuva preference
-      # - weight: 100
-      #   preference:
-      #     matchExpressions:
-      #     - key: project
-      #       operator: In
-      #       values:
-      #       - roboshop
-      # - weight: 10
-      #   preference:
-      #     matchExpressions:
-      #     - key: project
-      #       operator: In
-      #       values:
-      #       - amazon
+      # soft rule
+      preferredDuringSchedulingIgnoredDuringExecution:
+      # so here weight ekkuva vunde dhaniki ekkuva preference
+      - weight: 100
+        preference:
+          matchExpressions:
+          - key: project
+            operator: In
+            values:
+            - roboshop
+      - weight: 10
+        preference:
+          matchExpressions:
+          - key: project
+            operator: In
+            values:
+            - amazon
   containers:
   - name: nginx
     image: nginx
