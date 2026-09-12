@@ -30,11 +30,11 @@ spec:
 # upto ikkada run cheste 3 pods create ayyi 3 different locations measn 3 nodes loki vastai 
 
 --- 
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: web-server
-# spec:
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-server
+spec:
   selector:
     matchLabels:
       app: web-store
