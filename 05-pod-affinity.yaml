@@ -17,17 +17,17 @@ metadata:
   labels:
     app: pod-2
 spec:
-  # affinity:
-  #   podAffinity:
-  #     requiredDuringSchedulingIgnoredDuringExecution:
-  #       # this pod labels deatils
-  #     - labelSelector:
-  #         matchExpressions:
-  #         - key: app
-  #           operator: In
-  #           values:
-  #           - pod-1
-  #       topologyKey: topology.kubernetes.io/zone
+  affinity:
+    podAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        # this pod labels deatils
+      - labelSelector:
+          matchExpressions:
+          - key: app
+            operator: In
+            values:
+            - pod-1
+        topologyKey: topology.kubernetes.io/zone
   containers:
   - name: nginx
     image: nginx
